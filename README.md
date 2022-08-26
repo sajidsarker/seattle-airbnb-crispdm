@@ -1,6 +1,6 @@
 # Seattle Airbnb CRISP-DM Project
 
-*Sajid Al Sanai*
+*Completed by Sajid Al Sanai*
 
 **1. Introduction**
 
@@ -17,4 +17,4 @@ I have, however, included all (3) datasets above as part of this repository for 
 
 **3. Analysis & Evaluation**
 
-Preliminary analysis of my results are available in the produced notebook. However, a more verbose narrative, analysis, and evaluation are available in my blog post discussing the final results I have obtained.
+Preliminary analysis of my results are available in the accompanying notebook within this repository. However, a more verbose narrative, analysis, and evaluation are available in my blog post discussing the final results I have obtained.
