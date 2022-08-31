@@ -17,7 +17,7 @@ Python packages I have used for this project include:
 4. Seaborn
 5. Scikit-Learn
 
-You may install these using the following code in a UNIX-based environment:
+You may install these using the following *bash* code in a UNIX-based environment:
 ```bash
 python3 -m pip install --upgrade pip
 python3 -m pip install venv
