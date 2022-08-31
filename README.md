@@ -39,3 +39,5 @@ I have, however, included all (3) datasets above as part of this repository for 
 **4. Analysis & Evaluation**
 
 Preliminary analysis of my results are available in the accompanying notebook within this repository. However, a more verbose narrative, analysis, and evaluation are available in my blog post discussing the final results I have obtained.
+
+[Access my blog post for analysis.](https://sajidsarker.github.io/2022/08/31/seattle-airbnb-crisp-dm-project.html)
