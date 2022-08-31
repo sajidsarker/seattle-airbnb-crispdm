@@ -19,7 +19,12 @@ Python packages I have used for this project include:
 
 You may install these using the following code in a UNIX-based environment:
 ```bash
+python3 -m pip install --upgrade pip
+python3 -m pip install venv
+venv env
+source env/bin/activate
 python3 -m pip install numpy pandas matplotlib seaborn scikit-learn
+deactivate
 ```
 
 **1. Motivation**
