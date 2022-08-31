@@ -48,6 +48,11 @@ These questions include:
 - listings.csv
 - reviews.csv
 
+To download this repository to your local system, you may navigate to the directory where you wish to download the files and use the following UNIX-based *bash* code:
+```bash
+git clone https://github.com/sajidsarker/seattle-airbnb-crispdm.git
+```
+
 To run the Python notebook, please download and run *seattle-airbnb-crispdm.ipynb*, while making sure *listings.csv* and *reviews.csv* are downloaded to the same directory. 
 
 **3. Data**
