@@ -4,7 +4,7 @@
 
 **License:** MIT
 
-**1. Installations**
+## 1. Installation
 
 This project consists of a Python notebook created with Jupyter Lab and standard Python packages for data analysis and machine learning.
 
@@ -27,7 +27,7 @@ python3 -m pip install numpy pandas matplotlib seaborn scikit-learn
 deactivate
 ```
 
-**1. Motivation**
+## 2. Motivation
 
 I utilise data regarding listings of properties by Airbnb hosts in the city of Seattle (WA) between 2016-2017 for data and regression analysis using the CRISP-DM process. I identify several questions of business interest which I attempt to answer through analysis of the available data.
 
@@ -40,7 +40,7 @@ These questions include:
 6. Which amenities, housing characteristics, and factors contribute positively to revenue? (Linear Regression)
 7. Which amenities, housing characteristics, and factors contribute positively to ratings? (Linear Regression)
 
-**2. Files**
+## 3. Files
 - README.md
 - LICENSE.md
 - seattle-airbnb-crispdm.ipynb
@@ -55,7 +55,7 @@ git clone https://github.com/sajidsarker/seattle-airbnb-crispdm.git
 
 To run the Python notebook, please download and run *seattle-airbnb-crispdm.ipynb*, while making sure *listings.csv* and *reviews.csv* are downloaded to the same directory. 
 
-**3. Data**
+## 4. Data
 
 Datasets utilised are provided by Airbnb solely for the city of Seattle (WA), divided into (3) CSV files which are included in the same repository directory as my Python notebook. Of these (3) datasets, I utilise only (2) which are most relevant and useful for my analysis:
 1. Listings
@@ -64,7 +64,7 @@ Datasets utilised are provided by Airbnb solely for the city of Seattle (WA), di
 
 I have, however, included all (3) datasets above as part of this repository for completeness.
 
-**4. Analysis & Evaluation**
+## 5. Analysis & Evaluation
 
 Preliminary analysis of my results are available in the accompanying notebook within this repository. However, a more verbose narrative, analysis, and evaluation are available in my blog post discussing the final results I have obtained.
 
