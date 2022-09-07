@@ -4,7 +4,20 @@
 
 **License:** MIT
 
-## 1. Installation
+## 1. Motivation
+
+I utilise data regarding listings of properties by Airbnb hosts in the city of Seattle (WA) between 2016-2017 for data and regression analysis using the CRISP-DM process. I identify several questions of business interest which I attempt to answer through analysis of the available data.
+
+These questions include:
+1. What are the highest rated areas to to reserve accomodations in Seattle?
+2. What are the highest revenue generating neighbourhoods in Seattle?
+3. Which scores are most important to overall ratings? (Linear Regression)
+4. Do hosts with higher ratings overall earn higher revenue? (Linear Regression)
+5. What are the most widely provided amenities listed by hosts in Seattle?
+6. Which amenities, housing characteristics, and factors contribute positively to revenue? (Linear Regression)
+7. Which amenities, housing characteristics, and factors contribute positively to ratings? (Linear Regression)
+
+## 2. Installation
 
 This project consists of a Python notebook created with Jupyter Lab and standard Python packages for data analysis and machine learning.
 
@@ -26,19 +39,6 @@ source env/bin/activate
 python3 -m pip install numpy pandas matplotlib seaborn scikit-learn
 deactivate
 ```
-
-## 2. Motivation
-
-I utilise data regarding listings of properties by Airbnb hosts in the city of Seattle (WA) between 2016-2017 for data and regression analysis using the CRISP-DM process. I identify several questions of business interest which I attempt to answer through analysis of the available data.
-
-These questions include:
-1. What are the highest rated areas to to reserve accomodations in Seattle?
-2. What are the highest revenue generating neighbourhoods in Seattle?
-3. Which scores are most important to overall ratings? (Linear Regression)
-4. Do hosts with higher ratings overall earn higher revenue? (Linear Regression)
-5. What are the most widely provided amenities listed by hosts in Seattle?
-6. Which amenities, housing characteristics, and factors contribute positively to revenue? (Linear Regression)
-7. Which amenities, housing characteristics, and factors contribute positively to ratings? (Linear Regression)
 
 ## 3. Files
 - README.md
