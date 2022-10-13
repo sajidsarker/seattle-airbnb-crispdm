@@ -44,6 +44,7 @@ deactivate
 - README.md
 - LICENSE.md
 - seattle-airbnb-crispdm.ipynb
+- seattle-airbnb-crispdm.html
 - calendar.csv
 - listings.csv
 - reviews.csv
