@@ -20031,7 +20031,7 @@ class="
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>There appear to be distinct clumps of features exhibiting higher degrees of correlation. Amenities which are common tend to be present due to potential legal require,emt or as a standard, therefore exhibiting positive correlation. Additionally, certain luxurious amenities are correlated with higher priced listings.</p>
-<p>Property configuration (beds, bathrooms) are nearly perfectly related as they are somewhat dependent on each other or can be imputed due to standard industrial configuration in the housing market (e.g. 2bed1br). Pricing structures exhibit stronger correlation as high priced listings are correlated with higher maintenance charges.</p>
+<p>Property configuration (beds, bathrooms) are nearly perfectly related as they are somewhat dependent on each other or can be imputed due to standard industrial configuration in the housing market (e.g. 2 bed 1 bath). Pricing structures exhibit stronger correlation as high priced listings are correlated with higher maintenance charges.</p>
 
 </div>
 </div>
@@ -21127,6 +21127,8 @@ class="
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The Top (15) Most Provided Amenities are listed above in descending order. The assumption is certain amenities are required by law, meanwhile others are additional amenities which are non-essential but potentially attractive to guests.</p>
+<p>Bar certain amenities which are mandatory perhaps by Washington State laws such as fixtures of smoke detectors, carbon monoxide detectors, and fire extinguishers, the provision of amenities displayed in the chart above in descending order of overall availability, indicates some of the most popular conveniences travellers to Seattle would be able to enjoy at an Airbnb.</p>
+<p>This can be construed to identify a specific baseline for amenities which a host would need to offer to be fundamentally competitive in the market.</p>
 
 </div>
 </div>
@@ -21555,14 +21557,15 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The Top (3) review factors which impact overall rating for a host are:</p>
+<p>The Top 3 review factors which impact overall rating for a host are:</p>
 <ol>
 <li>Value</li>
 <li>Cleanliness</li>
 <li>Accuracy</li>
 </ol>
 <p>This implies that guests put increased weight on the value for money of their stay, the cleanliness of the accommodations provided by the host, and the degree to which the host's description of their accommodations accurately match the provided description when determining their overall score for a stay.</p>
-<p>This differs from the correlation matrix indicating that checkin experience was the third most correlated contributor to the overall rating, but otherwise relatively matches 2/3 contributors except in order of correlation to coefficient impact.</p>
+<p>This differs from the correlation matrix indicating that check-in experience was the third most correlated contributor to the overall rating, but otherwise relatively matches 2/3 contributors except in order of correlation to coefficient impact.</p>
+<p>Hosts wishing to improve their overall ratings can therefore put more effort into maintaining the cleanliness of their premises and providing very descriptive information about their listings on Airbnb. They may also offer competitive rates as is within their means.</p>
 
 </div>
 </div>
@@ -21826,7 +21829,10 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>At first, it appears that listings with high value for money ratings are largely associated with the most negative impact on estimated revenues earned. Positive ratings for checkin, location, communicativeness of the host, and cleanliness are all positively associated with estimated revenues earned. Overall ratings is positively associated with the lowest estimated revenues earned. Listings where hosts provided great value and listed accurate descriptions were associated with negative impact to estimated revenues.</p>
+<p>At first, it appears that listings with high value for money ratings are largely associated with the most negative impact on estimated revenues earned. Positive ratings for check-in experience, location, openness in communication of the host, and cleanliness are all positively associated with estimated revenues earned.</p>
+<p>Overall ratings are positively associated with the lowest estimated revenues earned. Listings where hosts provided great value and listed accurate descriptions were associated with negative impact to estimated revenues.</p>
+<p>However, given virtually no explanatory power (0.11% of target explained by features), virtually no correlation, incredibly high error in our residuals, and statistically insignificant coefficients, it would be inappropriate to interpret any explanatory effect of review ratings on revenue.</p>
+<p>We can assume that the revenue generation potential for a listing is interestingly not linked to factors which Airbnb requests its users rate their stays on, and therefore other characteristics and factors are at play from hosts and their property listings.At first, it appears that listings with high value for money ratings are largely associated with the most negative impact on estimated revenues earned. Positive ratings for checkin, location, communicativeness of the host, and cleanliness are all positively associated with estimated revenues earned. Overall ratings is positively associated with the lowest estimated revenues earned. Listings where hosts provided great value and listed accurate descriptions were associated with negative impact to estimated revenues.</p>
 <p>However, given virtually no explanatory power (0.11% of target explained by features), incredibly high error in our residuals, and statistically insignificant coefficients, it would be inappropriate to interpret any explanatory effect of review ratings on revenue.</p>
 
 </div>
@@ -22255,7 +22261,41 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The Top 25 amenities, housing characteristics, and similar factors contributing most greatly in positive association to Airbnb host revenues are depicted in the above bar chart and list.</p>
+<p>It appears that conducting a regression on the training dataset indicates that the listed regressors explain 23.34% of out-of-sample test data for overall estimated revenue in this linear regression model. We are presently not considering P-values to find whether regressors are statistically significant, but merely observing the model coefficients to determine degree of impact of regressor upon the overall rating.</p>
+<p>The Top 25 amenities, housing characteristics, and similar factors contributing most greatly in positive association to Airbnb host revenues are depicted in the above bar chart.</p>
+<p>Revenues are generally positively associated with Airbnb listings with a strict cancellation policy and for hosts with Super Host status. This would imply that verification of hosts in this manner and strong enforcement of scheduling can either ensure higher quality guests, or that well-maintained and valuable properties with experienced hosts tend to attract more guests. It also appears that guest ratings for the check-in experience is also a factor which is positively associated to revenue.</p>
+<p>When considering if a particular listing is of room type 'Entire Home or Apartment' on Airbnb, it is associated strongly with positive contribution to revenue. Listings that are the entire property tend to be more desirable by guests or garner higher prices due to whole units being limited to individual guest demand.</p>
+<p>The nature of the particular housing property listed on Airbnb associated strongly with a positive contribution as a feature that explains revenue includes:</p>
+<ul>
+<li>Chalet</li>
+<li>Tent</li>
+<li>Cabin</li>
+<li>Apartment</li>
+<li>House</li>
+<li>Bed &amp; Breakfast</li>
+<li>Townhouse</li>
+<li>Dormitory</li>
+<li>Bungalow</li>
+<li>Treehouse</li>
+<li>Yurt</li>
+</ul>
+<p>Alternative abodes or luxurious accommodations make for exciting or unique homestay experiences, which is not always offered by hotels which may operate to reduce risk for guests and offer the most consistent experience regardless of location in the world. This observation vindicates the unique value proposition Airbnb is able to offer in the industry.</p>
+<p>Amenities which are valuable in order of descending value in positive association to revenue include:</p>
+<ul>
+<li>Doorman</li>
+<li>Other Pets</li>
+<li>Hot Tub</li>
+<li>Breakfast</li>
+<li>Washer</li>
+<li>Laptop-friendly Workplace</li>
+<li>Pool</li>
+<li>Buzzer / Wireless Intercom</li>
+<li>Washer &amp; Dryer</li>
+</ul>
+<p>Certain amenities may act as proxies to describe other more concrete aspects of a listing which guests value.</p>
+<p>For example, the availability of a doorman and intercom may be considered highly popular as it is a proxy for building security which a guest actually values during the course of their stay.</p>
+<p>Availability of hot tubs, remote workplaces, pools, and free breakfast are proxies for luxuries or upscale conveniences that constitute a unique experience guests value and seek out on Airbnb.</p>
+<p>No particular neighbourhoods stand out as significant features with positive contributor to revenue, except that of properties listed in the neighbourhoods of West Seattle, Magnolia, Delridge, Rainier Valley, and Seward Park will experience lower revenue.The Top 25 amenities, housing characteristics, and similar factors contributing most greatly in positive association to Airbnb host revenues are depicted in the above bar chart and list.</p>
 <p>Revenues are generally positively associated with Airbnb listings with a strict cancellation policy and for hosts with Super Host status. This would imply that verification of hosts in this manner and strong enforcement of scheduling can either ensure higher quality guests, or that well-maintained and valuable properties with experienced hosts tend to attract more guests. It also appears that guest ratings for the Check-In experience is also a factor which is positively associated to revenue.</p>
 <p>When considering if a particular listing is of room type 'Entire Home or Apartment' on Airbnb, it is associated strongly with positive contrbution to revenue. Listings that are the entire property tend to be more desirable by guests or garner higher prices due to whole units being limited to individual guest demand. No particular neighbourhoods stand out as significant features with positive contributor to revenue, except that for properties listed in the neighbourhoods of West Seattle, Magnolia, Delridge, Rainier Valley, and Seward Park will experience lower revenue.</p>
 <p>The nature of the particular housing property listed on Airbnb associated strongly with a positive contribution as a feature that explains revenue includes:</p>
@@ -22666,11 +22706,13 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The Top 25 amenities, housing characteristics, and similar factors contributing most greatly in positive association to Airbnb host ratings are depicted in the above bar chart and list.</p>
-<p>Ratings are generally positively associated with Airbnb listings where hosts hold Super Host status and are verified. This would imply that positive recommendation and verification of hosts in this manner attracts and reassures guests that their host can be trusted, is seasoned, and has a reputation for offering a stellar experience. It also appears that prior investigated ratings of value, cleanliness, listing accuracy, host communication, check-in experience, and location all factor positively and significantly as composite measures explaining overall ratings.</p>
+<p>It appears that conducting a regression on the training dataset indicates that the listed regressors explain 56.24% of test data for overall estimated revenue in this linear regression model. We are presently not considering P-values to find whether regressors are statistically significant, but merely observing the model coefficients to determine degree of impact of regressor upon the overall rating.</p>
+<p>The Top 25 amenities, housing characteristics, and similar factors contributing most greatly in positive association to Airbnb host ratings are depicted in the above bar chart.</p>
+<p>Ratings are generally positively associated with Airbnb listings where hosts hold Super Host status and are verified. This would imply that positive recommendation and verification of hosts in this manner attracts and reassures guests that their host can be trusted, is seasoned, and has a reputation for offering a stellar experience.</p>
+<p>It also appears that prior investigated ratings of value, cleanliness, listing accuracy, host communication, check-in experience, and location all factor positively and significantly as composite measures explaining overall ratings.</p>
 <p>Interestingly, dormitory style properties tend to also be well-rated, as do housing with more bathrooms. For the latter characteristic, privacy and accessibility are appreciated by guests, while the former may indicate that guests enjoy shared guest experiences perhaps for socialisation.</p>
 <p>Additionally, amenities provided which tend to garner higher ratings are listed as follows:</p>
-<ol>
+<ul>
 <li>Washer &amp; Dryer</li>
 <li>Elevator</li>
 <li>Pets live on property</li>
@@ -22679,8 +22721,37 @@ class="
 <li>Safety Card</li>
 <li>Kitchen</li>
 <li>Smoker-friendly</li>
-</ol>
-<p>Neighbourhoods with positive ratings include Rainier Valley, Central Area, Beacon Hill, Delridge, West Seattle, and Capitol Hill. Interestingly, neighbourhoods previously seen to be associated with lower revenue also tend to be favoured positively in terms of user ratings. This may indicate that such areas offer high value for guests purely for their location while being low revenue generating perhaps due to earning lower prices with frequent to infrequent overall occupancy. It may alternatively also be a combination of being located in a highly desirable urban area but costlier for the guest and therefore infrequently occupied garnering overall lower revenues while still commanding high ratings. The latter alternative would also apply for high revenue generating areas such as Capitol Hill, Central Area, and Rainier Valley which are also highly rated therefore indicating high prices and high occupancy alike.</p>
+</ul>
+<p>Neighbourhoods with positive ratings include Rainier Valley, Central Area, Beacon Hill, Delridge, West Seattle, and Capitol Hill. Interestingly, neighbourhoods previously seen to be associated with lower revenue also tend to be favoured positively in terms of user ratings.</p>
+<p>This may indicate that such areas offer high value for guests purely for their location while being low revenue generating perhaps due to earning lower prices with frequent to infrequent overall occupancy.</p>
+<p>It may alternatively also be a combination of being located in a highly desirable urban area but costlier for the guest and therefore infrequently occupied garnering overall lower revenues while still commanding high ratings.</p>
+<p>The latter alternative would also apply for high revenue generating areas such as Capitol Hill, Central Area, and Rainier Valley which are also highly rated therefore indicating high prices and high occupancy alike.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr />
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="5.-Evaluation">5. Evaluation<a class="anchor-link" href="#5.-Evaluation">&#182;</a></h3><p>Given that the scope of this project remained quite small, and the constraints of the CRISP-DM approach with the context of our business questions did not necessitate any predictive analysis or rigorous machine learning models, the regression models produced, while fairly strong in identifying underlying associations, should only be taken as a preliminary investigation into some of the fundamental characteristics for the Airbnb market in Seattle.</p>
+<p>In future, were I to extend this project, I would use alternative variations of <strong>Generalised Linear Models</strong> with better predictive power to gauge feature importance while maintaining similar interpretability.</p>
+<p>Additionally, I would use certain techniques in dimensionality reduction to limit certain groups of features to produce composite features or drop features with poor explanatory power for my modelling.</p>
 
 </div>
 </div>
